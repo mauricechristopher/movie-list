@@ -5,50 +5,52 @@ import {Person} from 'styled-icons/material/Person'
 import {Filter} from 'styled-icons/feather/Filter'
 import {Search} from 'styled-icons/octicons/Search'
 
-export const Searcon = styled(Search)`
-  height: 44px;
-  width: 42px;
+export const Licon = styled(ListUl)`
+  height: 50%;
   position: relative;
   float: left;
-  padding-left: 50px;
-  padding-top: 25px;
-  color: red;
+  margin-left: 5%;
+`
+
+export const Title = styled.h1`
+  font-size: 1.5em;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  text-position: center;
 `
 
 export const Ricon = styled(Filter)`
-  height: 42px;
-  width: 42px;
+  height: 50%;
   position: relative;
-  padding-right: 25px;
   float: right;
-  padding-top: 25px;
+  margin-right: 5%;
 `
 
 export const Procon = styled(Person)`
-  height: 50px;
-  width: 50px;
+  height: 65%;
   position: relative;
-  float: left;
-  padding-left: 154px;
-  padding-top: 20px;
+  display: inline-block;
+  float: right;
+  margin-right: 15%;
   color: lightgray;
 `
 
-export const Licon = styled(ListUl)`
-  height: 44px;
-  width: 42px;
+export const Searcon = styled(Search)`
+  height: 50%;
+  margin-top: 1%;
   position: relative;
+  display: inline-block;
   float: left;
-  padding-left: 25px;
-  padding-top: 25px;
+  margin-left: 15%;
+  color: red;
 `
 
 export const Hearcon = styled(Heart)`
-  height: 50px;
-  width: 50px;
+  height: 60%;
   position: relative;
-  float: left;
-  padding-left: 154px;
-  padding-top: 20px;
+  display: inline-block;
   color: lightgray;
+  margin: 0 auto;
 `
