@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import {Heart} from 'styled-icons/boxicons-solid/Heart'
-import {ListUl} from 'styled-icons/boxicons-regular/ListUl'
-import {Person} from 'styled-icons/material/Person'
-import {Filter} from 'styled-icons/feather/Filter'
-import {Search} from 'styled-icons/octicons/Search'
+import { Heart  } from 'styled-icons/boxicons-solid/Heart'
+import { ListUl } from 'styled-icons/boxicons-regular/ListUl'
+import { Person } from 'styled-icons/material/Person'
+import { Filter } from 'styled-icons/feather/Filter'
+import { Search } from 'styled-icons/octicons/Search'
 
 export const Licon = styled(ListUl)`
   height: 50%;

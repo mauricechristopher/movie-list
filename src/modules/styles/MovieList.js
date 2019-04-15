@@ -20,6 +20,7 @@ export const ShowBut = styled.button`
   font-size: 2vmax;
   position: relative;
   margin-right: 25%;
+  cursor: pointer;
 `
 
 export const SoonBut = styled.button`
@@ -29,28 +30,18 @@ export const SoonBut = styled.button`
   background: none;
   font-size: 2vmax;
   position: relative;
+  cursor: pointer;
 `
 
 export const MovieDiv = styled.div`
   top: 42%;
   height: 50%;
   padding-left: 2.5%;
+  padding-right: 2.5%;
   display: block;
+  text-align: center;
   margin: 0 auto;
   width: 100%;
   position: fixed;
-  background-image: linear-gradient(white, #f6f6f6);
-`
-
-export const MovieCard = styled.div`
-  height: 50%;
-  display: block;
-  float: left;
-  width: 43.7%;
-  background-color: grey;
-  border-radius: 1.5%;
-  margin-bottom: 2.5%;
-  margin-left: 2.5%;
-  position: relative;
-  overflow: hidden;
+  background-image: linear-gradient(white, #E8E8E8);
 `
