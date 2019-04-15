@@ -3,39 +3,42 @@ import makeCarousel from 'react-reveal/makeCarousel';
 import styled from 'styled-components';
 import Slide from 'react-reveal/Slide';
 
-const width = '90%', height='150px';
 const Container = styled.div`
-  border-radius: 1.5%;
-  position: relative;
+  border-radius: 1%;
+  position: fixed;
   overflow: hidden;
-  width: ${width};
+  top: 8%;
+  height: 27%;
+  width: 90%;
   margin: 0 auto;
+  margin-left: 5%;
   background-color: slategrey;
-  padding-bottom: 20px;
-`;
-const Children  = styled.div`
-  width: ${width};
-  position: relative;
-  height: ${height};
-  margin: 0 auto;
   text-align: center;
+`;
+
+const Children  = styled.div`
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 `;
 
 const Dot = styled.span`
   font-size: 1em;
   cursor: pointer;
   user-select: none;
-  margin: 0 auto;
   color: white;
 `;
+
 const Dots = styled.span`
-  width: ${width};
+  bottom: 15%;
   cursor: pointer;
   z-index: 100;
-  padding-left: 211px;
+  position: relative;
+  display: block;
   margin: 0 auto;
-  padding-bottom: 50px;
+  height: 100%;
 `;
+
 const CarouselUI = ({ position, total, handleClick, children }) => (
   <Container>
     <Children>
