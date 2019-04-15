@@ -1,4 +1,7 @@
-## Available Scripts
+## Movie Listings Website
+Need to get your own API key here:
+
+## How to use
 
 In the project directory, you can run:
 
