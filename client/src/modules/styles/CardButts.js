@@ -13,21 +13,33 @@ margin: 0 auto;
 
 export const Viewcon = styled(Eye)`
   position: relative;
-  display: inline-block;
+  float: left;
+  margin-left: 8%;
+  display: block;
   color: lightgray;
-  margin: 0 auto;
+  width: 20%;
+  height: 20%;
+  padding-right: 13%;
 `
 
 export const Thumbcon = styled(ThumbsUp)`
 position: relative;
+margin: 0 auto;
+float: left;
 display: inline-block;
 color: lightgray;
-margin: 0 auto;
+text-position: center;
+width: 18%;
+height: 20%;
 `
 
 export const Commcon = styled(CommentDiscussion)`
 position: relative;
+margin-right: 8%;
+float: right;
 display: inline-block;
 color: lightgray;
-margin: 0 auto;
+text-position: center;
+width: 18%;
+height: 20%;
 `

@@ -19,19 +19,19 @@ export const MovieCardDiv = styled.div`
 
 
   @media (max-width: 420px) {
-    width: 44%;
-    height: 240px;
+    maxWidth: 44%;
+    height: 300px;
     objectFit: cover;
     margin-left: 2.5%;
   }
   @media (min-width: 675px) {
-    width: 20.6%;
-    maxHeight: 40%;
+    width: 28%;
+    height: 20%;
     margin-left: 3%;
   }
   @media (min-width: 1024px) {
-    width: 14.2%;
-    margin-left: 4%;
+    width: 15%;
+    margin-left: 3.5%;
   }
 
 `
@@ -51,6 +51,11 @@ export const myCard = styled(Card)`
   width: 100%;
   position: fixed;
   margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   }
 `
 //

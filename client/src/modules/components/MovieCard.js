@@ -1,5 +1,6 @@
 import React from 'react';
 import { MovieCardDiv, myCard, myCardTitle, myCardMedia, CardButtons, styles } from '../styles/Cards.js';
+import { HollowHearcon, Viewcon, Thumbcon, Commcon } from '../styles/CardButts'
 // import { CardMedia, CardTitle, Card } from 'material-ui'
 import Card from 'react-bootstrap/Card'
 import ButtBar from './ButtBar'
@@ -27,10 +28,12 @@ class MovieCard extends React.Component {
               <MovieCardDiv>
               <>
                 <myCard>
-                  <myCard.Img style={styles.bgImage} src={ movie.poster } alt="Card image" />
-                    <myCard.Title>{ movie.title }</myCard.Title>
-
-                    <Card.Text>Last updated 3 mins ago</Card.Text>
+                  <myCard.Img id={ movie.imdbId } style={styles.bgImage} src={ movie.poster } alt="Card image" />
+                  <myCard.Footer >
+                    <Viewcon/>
+                    <Thumbcon/>
+                    <Commcon/>
+                  </myCard.Footer>
                 </myCard>
                 </>
               </MovieCardDiv>
@@ -40,9 +43,13 @@ class MovieCard extends React.Component {
                     <>
                       <myCard>
                         <myCard.Img style={styles.bgImage} src="https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_SX300.jpg" alt="Card image" />
-                          <myCard.Title>{ movie.title }</myCard.Title>
+                          <myCard.Footer >
+                            <Viewcon/>
+                            <Thumbcon/>
+                            <Commcon/>
+                          </myCard.Footer>
 
-                          <Card.Text>Last updated 3 mins ago</Card.Text>
+
                       </myCard>
                     </>
                   </MovieCardDiv>
