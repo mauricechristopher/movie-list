@@ -44,7 +44,7 @@ export const myCard = styled(Card)`
   && {
   cursor: pointer;
   overflow: hidden;
-  height: 80%;
+  height: 100%;
   width: 90%;
   position: relative;
   margin: 0 auto;
@@ -61,7 +61,7 @@ export const myCardTitle = styled(CardTitle)`
 
 export const myCardMedia = styled(CardMedia)`
   && {
-    height: 80%;
+    height: 0%;
     position: fixed;
     overflow: hidden;
     background-color: red;
@@ -77,8 +77,10 @@ export const myCardMedia = styled(CardMedia)`
 // so I'll do this for now
 export const styles = {
   bgImage: {
-    height: '80%',
-    width: '100%'
+    height: '100%',
+    width: '100%',
+    overflow: 'hidden',
+    objectFit: 'cover'
   },
   cbgImage: {
     width: '100%',

@@ -32,7 +32,7 @@ const queryType = new GraphQLObjectType({
       type: SearchType,
       args: {
         apiKey: { type: GraphQLString },
-        searchTerm: { type: GraphQLString },
+        searchTerm: { type: GraphQLString }
         // more...
       },
       resolve(parent, args) {

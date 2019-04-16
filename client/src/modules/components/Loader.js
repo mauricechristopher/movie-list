@@ -19,8 +19,8 @@ const Refresh = styled(RefreshIndicator)`
   }
 `
 
-const Loader = ({isLoading, children}) => {
-  if (isLoading) {
+export default class Loader extends React.Component {
+  render() {
     return (
       <Refresh
         top={0}
@@ -30,8 +30,4 @@ const Loader = ({isLoading, children}) => {
       />
     );
   }
-  // Render nothing if no children present
-  return children ? children : null;
 }
-
-export default Loader;

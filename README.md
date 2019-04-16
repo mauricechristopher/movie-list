@@ -1,5 +1,5 @@
-## Movie Listings Website
-Need to get your own API key here:
+## Movie Listings Project using the OMDB API
+Need to get your own API key here: http://www.omdbapi.com/apikey.aspx
 
 ## How to use
 

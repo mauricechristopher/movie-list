@@ -2,6 +2,7 @@ const {
   GraphQLObjectType,
   GraphQLString,
   GraphQLList,
+  GraphQLNonNull
 } = require("graphql");
 
 const MovieRating = require("./movie_rating");
@@ -62,7 +63,7 @@ const MovieType = new GraphQLObjectType({
       resolve: (result) => result.Awards,
     },
     poster: {
-      type: GraphQLString,
+      type: GraphQLNonNull(GraphQLString),
       resolve: (result) => result.Poster,
     },
     ratings: {

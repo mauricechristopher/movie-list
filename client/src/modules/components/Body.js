@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './Header.component'
-import Footer from './Footer.component'
-import Carousel from "./Carousel.component.js"
-import MovieCard from './MovieCard.component.js'
+import Header from './Header'
+import Footer from './Footer'
+import Carousel from "./Carousel.js"
+import MovieCard from './MovieCard.js'
 import { ButtonDiv, ShowBut, SoonBut, MovieDiv } from "../styles/MovieList.js"
 import { MovieCardDiv } from '../styles/Cards.js'
 import { Container, Row, Col } from 'react-bootstrap';
-import MovieBody from './MovieList.component'
+import MovieBody from './MovieList'
 import * as scrollHelpers from '../common/scroll.helpers';
 // import MovieBody from './MovieList.component.js'
 
