@@ -9,7 +9,7 @@ export default styled.div`
   justify-content: center;
   align-items: center;
   bottom: 0px;
-  padding-bottom: 1.42%;
+  padding-bottom: 1%;
   margin: 0 auto;
   text-align: center;
 `

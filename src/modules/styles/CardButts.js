@@ -4,13 +4,6 @@ import { Eye } from 'styled-icons/feather/Eye'
 import { ThumbsUp } from 'styled-icons/feather/ThumbsUp'
 import { CommentDiscussion } from 'styled-icons/octicons/CommentDiscussion'
 
-export const ButtBar = styled.div`
-  position: fixed;
-  bottom: 0px;
-  background-color: white;
-  height: 20%;
-`
-
 export const HollowHearcon = styled(Heart)`
 position: relative;
 display: inline-block;

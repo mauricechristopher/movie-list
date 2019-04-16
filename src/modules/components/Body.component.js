@@ -13,41 +13,41 @@ import * as scrollHelpers from '../common/scroll.helpers';
 // eslint-disable-next-line
 
 class Body extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentPage: 1,
-      currentMovies: []
-    };
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-
-  componentDidMount() {
-    window.onscroll = this.handleScroll;
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll() {
-    const {topMovies} = this.props;
-    if (!topMovies.isLoading) {
-      let percentageScrolled = scrollHelpers.getScrollDownPercentage(window);
-      if (percentageScrolled > .8) {
-        const nextPage = this.state.currentPage + 1;
-        this.props.getTopMovies(nextPage);
-        this.setState({currentPage: nextPage});
-      }
-    }
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     currentPage: 1,
+  //     currentMovies: []
+  //   };
+  //   this.handleScroll = this.handleScroll.bind(this);
+  // }
+  //
+  // componentDidMount() {
+  //   window.onscroll = this.handleScroll;
+  // }
+  //
+  // componentWillUnmount() {
+  //   window.removeEventListener('scroll', this.handleScroll);
+  // }
+  //
+  // handleScroll() {
+  //   const {topMovies} = this.props;
+  //   if (!topMovies.isLoading) {
+  //     let percentageScrolled = scrollHelpers.getScrollDownPercentage(window);
+  //     if (percentageScrolled > .8) {
+  //       const nextPage = this.state.currentPage + 1;
+  //       this.props.getTopMovies(nextPage);
+  //       this.setState({currentPage: nextPage});
+  //     }
+  //   }
+  // }
 
   render() {
     const {topMovies} = this.props;
     const movies = [MovieCard];
 
     return (
-      <div>
+      <div className="container">
         <Header />
         <Carousel />
 

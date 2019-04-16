@@ -6,10 +6,10 @@ export const ButtonDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   width: 90%;
   margin-left: 5%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 `
 
 export const ShowBut = styled.button`
@@ -34,14 +34,17 @@ export const SoonBut = styled.button`
 `
 
 export const MovieDiv = styled.div`
-  top: 42%;
+  top: 43%;
   height: 50%;
   padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-right: 3%;
   display: block;
   text-align: center;
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
   position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-image: linear-gradient(white, #E8E8E8);
+
 `

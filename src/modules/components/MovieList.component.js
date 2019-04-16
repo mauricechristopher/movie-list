@@ -27,7 +27,7 @@ export default class MovieBody extends React.Component {
     for (let i = 0; i < 36; i++) {
         movies.push(
           <MyCol key={i} xs={2} sm={2} md={8}>
-            <MovieCard xs={2} />
+            <MovieCard />
           </MyCol>);
       }
     return movies

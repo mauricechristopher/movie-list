@@ -5,7 +5,7 @@ export const MovieCardDiv = styled.div`
   height: 50%;
   display: inline-block;
   float: left;
-  width: 20.6%;
+  width: 44%;
   background-color: white;
   border-radius: 0.5em;
   margin-bottom: 2.5%;
@@ -14,14 +14,37 @@ export const MovieCardDiv = styled.div`
   overflow: hidden;
   box-shadow: 0 4px 8px 0 #DCDCDC, 0 6px 20px 0 #DCDCDC;
   cursor: pointer;
-  text-position: center;
+  text-align: center;
+
+
+
+  @media (max-width: 420px) {
+    width: 44%;
+    margin-left: 2.5%;
+  }
+  @media (min-width: 675px) {
+    width: 20.6%;
+    margin-left: 3%;
+  }
+  @media (min-width: 1024px) {
+    width: 14.2%;
+    margin-left: 4%;
+  }
+
+`
+
+export const ButtBar = styled.div`
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+  height: 20%;
 `
 
 export const myCard = styled(Card)`
   && {
   cursor: pointer;
   overflow: hidden;
-  height: 100%;
+  height: 80%;
   width: 90%;
   position: relative;
   margin: 0 auto;
@@ -38,7 +61,7 @@ export const myCardTitle = styled(CardTitle)`
 
 export const myCardMedia = styled(CardMedia)`
   && {
-    height: 90%;
+    height: 80%;
     position: fixed;
     overflow: hidden;
     background-color: red;

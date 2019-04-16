@@ -10,6 +10,7 @@ export const Licon = styled(ListUl)`
   position: relative;
   float: left;
   margin-left: 5%;
+  cursor: pointer;
 `
 
 export const Title = styled.h1`
@@ -19,6 +20,7 @@ export const Title = styled.h1`
   display: inline-block;
   margin: 0 auto;
   text-position: center;
+  cursor: pointer;
 `
 
 export const Ricon = styled(Filter)`
@@ -26,15 +28,18 @@ export const Ricon = styled(Filter)`
   position: relative;
   float: right;
   margin-right: 5%;
+  cursor: pointer;
 `
 
 export const Procon = styled(Person)`
   height: 65%;
+  margin-top: .75%;
   position: relative;
   display: inline-block;
   float: right;
   margin-right: 15%;
   color: lightgray;
+  cursor: pointer;
 `
 
 export const Searcon = styled(Search)`
@@ -45,12 +50,15 @@ export const Searcon = styled(Search)`
   float: left;
   margin-left: 15%;
   color: red;
+  cursor: pointer;
 `
 
 export const Hearcon = styled(Heart)`
-  height: 60%;
+  height: 65%;
+  padding-top: .75%;
   position: relative;
   display: inline-block;
   color: lightgray;
   margin: 0 auto;
+  cursor: pointer;
 `
