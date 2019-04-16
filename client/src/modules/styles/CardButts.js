@@ -5,9 +5,10 @@ import { ThumbsUp } from 'styled-icons/feather/ThumbsUp'
 import { CommentDiscussion } from 'styled-icons/octicons/CommentDiscussion'
 
 export const HollowHearcon = styled(Heart)`
-position: relative;
-display: inline-block;
-color: lightgray;
+position: absolute;
+display: block;
+color: white;
+height: 50%;
 margin: 0 auto;
 `
 

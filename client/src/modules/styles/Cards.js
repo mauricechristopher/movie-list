@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Card from 'react-bootstrap/Card'
 
 export const MovieCardDiv = styled.div`
-  height: 50%;
+  height: 420px;
   display: inline-block;
   float: left;
   width: 44%;
@@ -15,7 +15,7 @@ export const MovieCardDiv = styled.div`
   box-shadow: 0 4px 8px 0 #DCDCDC, 0 6px 20px 0 #DCDCDC;
   cursor: pointer;
   text-align: center;
-
+  resizeMode: contain
 
 
   @media (max-width: 420px) {
@@ -26,11 +26,17 @@ export const MovieCardDiv = styled.div`
   }
   @media (min-width: 675px) {
     width: 28%;
-    height: 20%;
+    height: 400px;
     margin-left: 3%;
   }
   @media (min-width: 1024px) {
+    width: 20%;
+    height: 450px;
+    margin-left: 3.5%;
+  }
+  @media (min-width: 1700px) {
     width: 15%;
+    height: 500px;
     margin-left: 3.5%;
   }
 
@@ -51,11 +57,6 @@ export const myCard = styled(Card)`
   width: 100%;
   position: fixed;
   margin: 0 auto;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   }
 `
 //
@@ -85,7 +86,7 @@ export const myCard = styled(Card)`
 // so I'll do this for now
 export const styles = {
   bgImage: {
-    height: 'auto',
+    height: '85%',
     width: '100%'
   },
   cbgImage: {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { MovieCardDiv, myCard, myCardTitle, myCardMedia, CardButtons, styles } from '../styles/Cards.js';
 import { HollowHearcon, Viewcon, Thumbcon, Commcon } from '../styles/CardButts'
-// import { CardMedia, CardTitle, Card } from 'material-ui'
+import MovieModal from './MovieModal'
 import Card from 'react-bootstrap/Card'
 import ButtBar from './ButtBar'
 import { graphql } from 'react-apollo'
@@ -11,9 +11,9 @@ import Loader from './Loader'
 class MovieCard extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      isMouseOver: false
-    };
+    this.state = { show: false };
+
+    this.show = () => this.setState({ show: true });
   }
   render() {
     let data = this.props.data
@@ -26,16 +26,16 @@ class MovieCard extends React.Component {
           if(movie.poster != "N/A" && movie.title != "Re-Animator: 1942") {
             return (
               <MovieCardDiv>
-              <>
-                <myCard>
-                  <myCard.Img id={ movie.imdbId } style={styles.bgImage} src={ movie.poster } alt="Card image" />
-                  <myCard.Footer >
-                    <Viewcon/>
-                    <Thumbcon/>
-                    <Commcon/>
-                  </myCard.Footer>
-                </myCard>
-                </>
+                  <>
+                    <myCard>
+                      <myCard.Img id={ movie.imdbId } style={styles.bgImage} src={ movie.poster } alt="Card image" />
+                      <myCard.Footer >
+                        <Viewcon/>
+                        <Thumbcon/>
+                        <Commcon/>
+                      </myCard.Footer>
+                    </myCard>
+                  </>
               </MovieCardDiv>
             )} else {
                 return (
