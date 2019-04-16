@@ -24,6 +24,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
-/client/src/modules/movie-browser/movie-browser.service.js
+/client/src/modules/queries/queries.js
 /server/schema/apiKey.js
