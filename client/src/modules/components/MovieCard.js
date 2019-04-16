@@ -34,7 +34,7 @@ class MovieCard extends React.Component {
                     //   />
                     // }
                   >
-                    <img style={styles.bgImage} src={ movie.poster } alt={ movie.title }/>
+                    <img style={styles.bgImage} key={ movie.imdbId } src={ movie.poster } alt={ movie.title }/>
                   </myCardMedia>
                 </myCard>
               </MovieCardDiv>
