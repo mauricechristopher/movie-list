@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Card, CardTitle, CardMedia } from 'material-ui';
+import Card from 'react-bootstrap/Card'
 
 export const MovieCardDiv = styled.div`
   height: 50%;
@@ -20,10 +20,13 @@ export const MovieCardDiv = styled.div`
 
   @media (max-width: 420px) {
     width: 44%;
+    height: 240px;
+    objectFit: cover;
     margin-left: 2.5%;
   }
   @media (min-width: 675px) {
     width: 20.6%;
+    maxHeight: 40%;
     margin-left: 3%;
   }
   @media (min-width: 1024px) {
@@ -44,29 +47,29 @@ export const myCard = styled(Card)`
   && {
   cursor: pointer;
   overflow: hidden;
-  height: 100%;
-  width: 90%;
-  position: relative;
+  maxHeight: 90%;
+  width: 100%;
+  position: fixed;
   margin: 0 auto;
   }
 `
-
-export const myCardTitle = styled(CardTitle)`
-  && {
-    whiteSpace: nowrap;
-    textOverflow: ellipsis;
-    overflow: hidden;
-  }
-`
-
-export const myCardMedia = styled(CardMedia)`
-  && {
-    height: 0%;
-    position: fixed;
-    overflow: hidden;
-    background-color: red;
-  }
-`
+//
+// export const myCardTitle = styled(CardTitle)`
+//   && {
+//     whiteSpace: nowrap;
+//     textOverflow: ellipsis;
+//     overflow: hidden;
+//   }
+// `
+//
+// export const myCardMedia = styled(CardMedia)`
+//   && {
+//     height: 0%;
+//     position: fixed;
+//     overflow: hidden;
+//     background-color: red;
+//   }
+// `
 
 // export const myCardBg = styled.img`
 //   && {
@@ -77,10 +80,8 @@ export const myCardMedia = styled(CardMedia)`
 // so I'll do this for now
 export const styles = {
   bgImage: {
-    height: '100%',
-    width: '100%',
-    overflow: 'hidden',
-    objectFit: 'cover'
+    height: 'auto',
+    width: '100%'
   },
   cbgImage: {
     width: '100%',
