@@ -1,5 +1,10 @@
-## Movie Listings Project using the OMDB API
-Need to get your own API key here: http://www.omdbapi.com/apikey.aspx
+## Movie Listings Project created with React, Node, and GraphQL
+
+a static version is hosted here
+http://mauricechristopher.github.io/movie-list
+
+## If you would like to run it using real movie data 
+You need to get your own API key here: http://www.omdbapi.com/apikey.aspx
 
 ## How to use
 
